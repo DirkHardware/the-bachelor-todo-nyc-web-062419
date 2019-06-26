@@ -15,13 +15,14 @@ contestants = []
 data.collect do |season, contestant|
 contestants << contestant
 end
-contestants.collect do |contestant|
-contestant.collect do |key, var|
-binding.pry
-if var == occupation
-return key["name"]
-end
-end
+  contestants.collect do |contestant|
+    contestant.collect do |key, var|
+    binding.pry
+      if var == occupation
+        return key["name"]
+      end
+    end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
