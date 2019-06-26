@@ -17,7 +17,7 @@ contestants << contestant
 end
   contestants.collect do |contestant|
     contestant.collect do |key, var|
-    binding.pry
+      # binding.pry
       if var == occupation
         return key["name"]
       end
