@@ -21,7 +21,8 @@ end
     contestant.collect do |key, var|
       binding.pry
       if var == occupation
-        return key["name"]
+        key["name"]
+        binding.pry
       end
     end
   end
