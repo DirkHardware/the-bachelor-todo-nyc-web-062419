@@ -18,7 +18,8 @@ data.collect do |season, contestant|
 contestants << contestant
 end
   contestants.collect do |contestant|
-    contestant.collect do |key, var|
+    contestant.collect do |hash, key|
+      key.collect do |key, var|
       binding.pry
       if var == occupation
         key["name"]
