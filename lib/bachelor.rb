@@ -23,7 +23,7 @@ end
       # binding.pry
         if var == occupation
           key["name"]
-          # binding.pry
+          binding.pry
         end
       end
     end
