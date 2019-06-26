@@ -20,10 +20,10 @@ end
   contestants.collect do |contestant|
     contestant.collect do |hash, key|
       key.collect do |key, var|
-      binding.pry
+      # binding.pry
         if var == occupation
           key["name"]
-          binding.pry
+          # binding.pry
         end
       end
     end
